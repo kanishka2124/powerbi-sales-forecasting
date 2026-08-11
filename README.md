@@ -1,128 +1,154 @@
-# 📱 Power BI Sales Forecasting & Customer Analytics
+# 📱 Strategic Mobile Sales Analytics & Forecasting
 
-## 📌 Project Overview
+An interactive **Power BI sales analytics solution** designed to analyze revenue performance, customer behavior, product and brand performance, seasonality, and potential business scenarios.
 
-This project analyzes mobile phone sales data in Power BI to identify sales trends, customer behavior patterns, product performance, and revenue drivers.
+The project combines **data modeling, DAX, forecasting, customer segmentation, dynamic ranking, and What-If analysis** to transform transactional mobile sales data into actionable business insights.
 
-The solution combines data modeling, DAX measures, time-series forecasting, customer segmentation, product ranking, and what-if simulation to support business decision-making.
+---
 
-## 🎯 Objectives
+## 🔗 Project Files
 
-- Analyze sales and revenue trends over time
-- Build a structured Power BI data model using a star schema
-- Create reusable DAX measures for KPIs and time intelligence
-- Segment customers by demographic and behavioral attributes
-- Compare brand and product performance
-- Forecast future revenue and unit sales
-- Evaluate pricing and demand scenarios using what-if parameters
+- [📊 View / Download Power BI Dashboard](PowerBI_Sales_Forecasting.pbix)
+- [📄 View Project Report](PowerBI_Sales_Forecasting_Report.pdf)
 
-## 🛠️ Tools & Techniques
+---
 
-- Microsoft Power BI
-- Power Query
-- DAX
-- Star Schema Data Modeling
-- Time Intelligence
-- Customer Segmentation
-- Sales Forecasting
-- Top-N Analysis
-- What-If Parameters
-- Data Visualization
+## 📊 Executive Summary
+
+The Executive Summary provides a high-level view of overall sales performance and key business drivers.
+
+![Executive Summary](01-executive-summary.png)
+
+### Key Metrics
+- **Total Revenue:** $40.22M
+- **Total Units Sold:** 50K+
+- **Average Selling Price:** ~$803
+- **Revenue YTD:** $40.22M
+- **Month-over-Month Revenue Change:** 14% for the current reporting context
+
+Interactive slicers allow users to analyze performance by **month, location, and brand**.
+
+---
+
+## 📈 Sales Trends & Seasonality
+
+This page explores sales patterns over time and provides forecasting views for both revenue and units.
+
+![Sales Trends and Seasonality](02-sales-trends-seasonality.png)
+
+### Analysis Includes
+- Monthly revenue forecasting
+- Unit sales forecasting
+- Revenue patterns by month and day
+- Seasonality analysis
+- Month-over-month revenue change
+
+The forecasting views provide an indication of expected future sales patterns based on historical behavior.
+
+---
+
+## 👥 Customer Segmentation & Behavior
+
+Customer analysis evaluates how different demographic groups contribute to revenue and sales volume.
+
+![Customer Segmentation and Behavior](03-customer-segmentation-behavior.png)
+
+The dashboard explores:
+
+- Revenue and units by gender
+- Revenue contribution across age segments
+- Payment preferences by gender
+- Geographic differences across customer groups
+- Detailed segment-level revenue and unit performance
+
+This analysis helps identify customer groups that contribute strongly to overall business performance.
+
+---
+
+## 🔮 Predictive Scenario Evaluation
+
+The What-If simulation enables users to evaluate how changes in **price and unit volume** could affect expected revenue.
+
+![Predictive Scenario Evaluation](04-predictive-scenario-evaluation.png)
+
+Users can adjust:
+
+- **Price Change %**
+- **Unit Change %**
+
+The dashboard then compares **actual revenue with simulated revenue** across time and brands, allowing alternative business scenarios to be evaluated interactively.
+
+---
+
+## 🧠 Analytical Techniques
+
+The project demonstrates:
+
+- Data cleaning and preparation
+- Star-schema dimensional modeling
+- DAX measures and calculated metrics
+- Time-intelligence analysis
+- Month-over-month analysis
+- Dynamic Top-N ranking
+- Customer segmentation
+- Product and brand analysis
+- Revenue and unit forecasting
+- Seasonality analysis
+- What-If parameter simulation
+- Interactive dashboard design
+
+---
 
 ## 🗂️ Data Model
 
-The Power BI model follows a star schema with:
+The Power BI model follows a **star-schema structure** with a central sales fact table connected to supporting dimensions.
 
-- FactSales
-- Date dimension
-- Product dimension
-- Customer dimension
-- Location dimension
-- Payment dimension
+Key model components include:
 
-The Date table was configured to support time-intelligence calculations such as YTD, YoY growth, and seasonality analysis.
+- `FactSales`
+- `Date`
+- `DimProduct`
+- `DimLocation`
+- `DimPayment`
 
-## 📊 Key Measures & Calculations
+A dedicated Measures structure organizes calculations for core KPIs, ranking, segmentation, simulation, and time intelligence.
 
-The dashboard includes measures for:
+---
 
-- Total Revenue
-- Total Units Sold
-- Average Price per Unit
-- Revenue YTD
-- Revenue YoY %
-- Units Seasonality Ratio
-- Customer and payment-method shares
-- Brand and product rankings
-- Dynamic Top-N analysis
+## 💡 Key Business Insights
 
-## 🔮 Forecasting
+The analysis identified several useful patterns:
 
-Power BI’s built-in forecasting tool was applied to monthly revenue and unit-sales data.
+- Overall sales generated approximately **$40.22M in revenue** from more than **50K units**.
+- Sales performance varies across customer age segments, locations, brands, and payment methods.
+- Customer segmentation highlights differences in revenue contribution and purchasing behavior across demographic groups.
+- Product and brand analysis reveals differences between high-revenue and high-volume performers.
+- Forecasting provides a forward-looking view of revenue and unit-sales patterns.
+- What-If simulation allows potential pricing and volume strategies to be evaluated before implementation.
 
-The forecasting approach used:
+---
 
-- Monthly aggregated sales data
-- Exponential smoothing
-- Automatic seasonality detection
-- Short-term forecast horizons
-- Confidence intervals
+## 🛠️ Tools & Technologies
 
-## 👥 Customer Segmentation
+- **Power BI Desktop**
+- **DAX**
+- **Power Query**
+- **Data Modeling**
+- **Time-Series Forecasting**
+- **Interactive Data Visualization**
 
-Customer behavior was analyzed by:
+---
 
-- Age group
-- Gender
-- Payment method
-- Geography
+## 📁 Repository Contents
 
-The analysis identified high-value customer segments and helped compare purchasing behavior across groups.
+- **Power BI (.pbix)** — complete interactive dashboard and data model
+- **Project Report (.pdf)** — methodology, analysis, findings, and discussion
+- **Dashboard Screenshots (.png)** — selected portfolio views
 
-## 📱 Product & Brand Analysis
+---
 
-Product analysis compared:
+## 🎯 Project Purpose
 
-- Revenue by brand
-- Units sold
-- Average price
-- Product rankings
-- Pricing vs revenue relationships
+This project demonstrates the development of an end-to-end business intelligence solution that moves beyond descriptive reporting to include **forecasting, segmentation, and interactive scenario analysis**.
 
-A dynamic Top-N parameter was used to allow flexible comparison of top-performing products and brands.
-
-## 🧪 What-If Simulation
-
-Interactive parameters were created to simulate changes in:
-
-- Product prices
-- Units sold
-
-The model estimated the resulting impact on revenue to support scenario analysis and business planning.
-
-## 🔍 Key Insights
-
-- Sales showed recurring seasonal and weekly patterns.
-- Certain age groups contributed a larger share of total revenue.
-- High unit sales did not always correspond to the highest revenue.
-- Digital payment methods were among the most frequently used.
-- The what-if analysis suggested that changes in sales volume could have a stronger proportional impact on revenue than equivalent price changes.
-
-## 💡 Business Value
-
-The dashboard provides a consolidated view of sales performance, customer behavior, product trends, and future sales expectations.
-
-It can support decisions related to:
-
-- Inventory planning
-- Marketing strategy
-- Customer targeting
-- Product positioning
-- Pricing decisions
-- Revenue forecasting
-
-## 👤 Author
-
-**Kanishka Skandaraj**  
-Master of Data Analytics Candidate  
-University of Niagara Falls Canada
+The dashboard was developed as part of graduate-level Data Analytics coursework and has been refined for portfolio presentation.
